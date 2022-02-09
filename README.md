@@ -1,4 +1,4 @@
 # AmazonCardMaker
 
 ✨🌈 Live demo :
-https://sellcardmaker.herokuapp.com
+https://bit.ly/sellCard
