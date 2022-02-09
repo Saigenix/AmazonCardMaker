@@ -1,5 +1,5 @@
 &lt;br/&gt;
-                &lt;div class="separator" style="clear: both; text-align: left;"&gt;&lt;ul style="text-align: left;"&gt;&lt;li&gt;&lt;span style="font-family: courier; font-size: medium;"&gt;&lt;b&gt;{}&lt;/b&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+             &lt;div class="separator" style="clear: both; text-align: left;"&gt;&lt;ul style="text-align: left;"&gt;&lt;li&gt;&lt;span style="font-family: courier; font-size: medium;"&gt;&lt;b&gt;{}&lt;/b&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
                 &lt;div class="card"&gt;
                 &lt;img alt="{{modelName}}" src="{{modelImg}}" style="width: 100%;" /&gt;
                 &lt;h1&gt;{{modelName}}&lt;/h1&gt;
