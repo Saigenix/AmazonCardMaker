@@ -1,0 +1,47 @@
+&lt;br/&gt;
+                &lt;div class="separator" style="clear: both; text-align: left;"&gt;&lt;ul style="text-align: left;"&gt;&lt;li&gt;&lt;span style="font-family: courier; font-size: medium;"&gt;&lt;b&gt;{}&lt;/b&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+                &lt;div class="card"&gt;
+                &lt;img alt="{{modelName}}" src="{{modelImg}}" style="width: 100%;" /&gt;
+                &lt;h1&gt;{{modelName}}&lt;/h1&gt;
+                &lt;p class="price"&gt;{{modelPrice}}/-&lt;/p&gt;&lt;br /&gt;
+                &lt;p&gt;
+                  {{modelDes}}
+                  &lt;/p&gt;&lt;br /&gt;
+                  &lt;p&gt;
+                    &lt;button onclick="window.open('{{modelLink}}','_blank');"&gt;
+                      buy now!
+                    &lt;/button&gt;
+                  &lt;/p&gt;
+                &lt;/div&gt;
+
+
+
+&lt;style&gt;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+&lt;/style&gt;

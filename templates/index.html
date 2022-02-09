@@ -1,41 +1,84 @@
-<html> 
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link rel="stylesheet" type="text/css" href="../static/index.css"> 
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" type="text/css" href="../static/index.css" />
+  </head>
 
+  <body>
+    <form class="grid" action="/result" method="POST">
+      <label for="modelFea">Feature of the model:* </label>
+      <input type="text" id="modelFea" name="modelFea" />
+      <label for="modelImg">Img link of the model:* </label>
+      <input type="text" id="modelImg" name="modelImg" />
+      <label for="modelName">Name of the model:* </label>
+      <input type="text" id="modelName" name="modelName" />
+      <label for="modelPrice">Price of the model:* </label>
+      <input type="text" id="modelPrice" name="modelPrice" />
+      <label for="modelDes">Discription of the model:* </label>
+      <input type="text" id="modelDes" name="modelDes" />
+      <label for="modelLink">Link of the model:* </label>
+      <input type="text" id="modelLink" name="modelLink" />
+      <center><input class="file_submit" type="Submit" /></center>
+      {% if modelFea %}
+      <center>
+        <h3 style="color: rgb(255, 0, 234); font-size: small" class="let_space" id="code">
+          <pre class="htmlcode">
+                &lt;br/&gt;
+                &lt;div class="separator" style="clear: both; text-align: left;"&gt;&lt;ul style="text-align: left;"&gt;
+                &lt;li&gt;&lt;span style="font-family: courier; font-size: medium;"&gt;&lt;b&gt;{{modelFea}}&lt;/b&gt;
+                &lt;/span&gt;&lt;/li&gt;
+                &lt;/ul&gt;&lt;/div&gt;
+                &lt;div class="card"&gt;
+                &lt;img alt="{{modelName}}" src="{{modelImg}}" style="width: 100%;" /&gt;
+                &lt;h1&gt;{{modelName}}&lt;/h1&gt;
+                &lt;p class="price"&gt;{{modelPrice}}/-&lt;/p&gt;&lt;br /&gt;
+                &lt;p&gt;
+                {{modelDes}}
+                &lt;/p&gt;&lt;br /&gt;
+                &lt;p&gt;
+                &lt;button onclick="window.open('{{modelLink}}','_blank');"&gt;
+                      buy now!
+                    &lt;/button&gt;
+                  &lt;/p&gt;
+                &lt;/div&gt;</pre
+          >
+        </h3>
 
-
-	</head>
-	
-	<body>
-
-        <form class="grid" action="/result" method="POST">
-
-          {% if name %}
-            <center>
-              <h3 style="color: blue;" class="let_space">Hello {{name}}, How was your day!!</h3>
-            </center> 
-           {% endif %}
-           
-          <label for="name">Enter you name:</label>
-          <input type="text" id="name" name="name">
-
-          <center><input class="file_submit" type="Submit"></center>
-
-        </form>
-
+      </center>
+      {% endif %}
+    </form>
+     <p><pre>&lt;style&gt;
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 300px;
+          margin: auto;
+          text-align: center;
+          font-family: arial;
+        }
+        .price {
+          color: grey;
+          font-size: 22px;
+        }
         
-
+        .card button {
+          border: none;
+          outline: 0;
+          padding: 12px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+        }
         
-
-        
-        <br>
-        <br>
-        <br>
-
-
-    </body>
-
+        .card button:hover {
+          opacity: 0.7;
+        }
+        &lt;/style&gt;</pre></p>
+    <br />
+    <br />
+    <br />
+  </body>
 </html>
